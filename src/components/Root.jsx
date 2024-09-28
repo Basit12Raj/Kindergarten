@@ -7,7 +7,7 @@ import AboutKing from "./AboutKing";
 import OurClasses from "./OurClasses";
 import Counts from "./Counts";
 import OurActivities from "./OurActivities";
-import ChooseUs from "./";
+import ChooseUs from "./ChooseU";
 import OurTeachers from "./OurTeachers";
 import OurGallery from "./OurGallery";
 import OurBlog from "./OurBlog";
