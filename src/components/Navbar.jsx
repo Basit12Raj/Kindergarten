@@ -145,19 +145,19 @@ function Navbar() {
               <BsHouseDoor />
             )}
         </li>
-        <li className="flex items-center space-x-2 border-b border-gray-600 pb-2">
+        <Link to='/about' className="flex items-center space-x-2 border-b border-gray-600 pb-2">
           <PiHandPeace className="text-lg" />
           <span>About Us</span>
-        </li>
-        <li className="flex items-center space-x-2 border-b border-gray-600 pb-2">
+        </Link>
+        <Link to='/class' className="flex items-center space-x-2 border-b border-gray-600 pb-2">
           <MdFlightClass className="text-lg" />
           <span>Classes</span>
-        </li>
-        <li className="flex items-center space-x-2 border-b border-gray-600 pb-2">
+        </Link>
+        <Link to='/teachers' className="flex items-center space-x-2 border-b border-gray-600 pb-2">
           <LiaChalkboardTeacherSolid className="text-lg" />
           <span>Teachers</span>
-        </li>
-        <li className="border-b border-gray-600 pb-2">
+        </Link>
+        <Link to='/blog' className="border-b border-gray-600 pb-2">
           <div
             className="flex items-center justify-between cursor-pointer"
             onClick={() => toggleMobileDropdown("blog")}
@@ -173,7 +173,7 @@ function Navbar() {
               ["Blog Grid", "Blog List"],
               <BsNewspaper />
             )}
-        </li>
+        </Link>
         <li className="border-b border-gray-600 pb-2">
           <div
             className="flex items-center justify-between cursor-pointer"
@@ -187,14 +187,21 @@ function Navbar() {
           </div>
           {openMobileDropdown === "pages" &&
             renderMobileDropdownItems(
-              ["Events", "Services", "Gallery", "FAQ", "Membership Level"],
+              [
+                { type: "link", label: "Events", path: "/events" },
+                { type: "link", label: "Services", path: "/services" },
+                { type: "link", label: "Gallery", path: "/gallery" },
+                { type: "link", label: "FAQ", path: "/faq" },
+                { type: "link", label: "Membership Level", path: "/membership" },
+              
+              ],
               <BsFileEarmark />
             )}
         </li>
-        <li className="flex items-center space-x-2 pb-2">
+        <Link to='/contact' className="flex items-center space-x-2 pb-2">
           <RiContactsBook2Fill className="text-lg" />
           <span>Contact Us</span>
-        </li>
+        </Link>
       </ul>
     </div>
   );

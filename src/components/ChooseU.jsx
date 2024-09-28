@@ -1,7 +1,7 @@
 import React from "react";
 import Phool from "../assets/phool.png";
 import Choose from "../assets/Choise1.png";
-import Choose1 from '../assets/Choose2.png'
+import Choose1 from '../assets/choose2.png'
 import Choose2 from '../assets/choose3.png'
 import Choose3 from '../assets/choose4.png'
 
